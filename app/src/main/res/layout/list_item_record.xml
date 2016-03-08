@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/abc_item_background_holo_dark">
+
+    <TextView
+        android:id="@+id/Record_Date"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:textColor="#c8c8c8"
+        android:typeface="normal"
+        android:textSize="15sp"
+        android:paddingRight="8dp"
+        android:gravity="center_vertical|right"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentTop="false"
+        />
+
+    <TextView
+        android:id="@+id/Record_Category"
+        android:layout_width="125dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/Record_Date"
+        android:gravity="center_vertical"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:textColor="#fefefe"
+        android:textStyle="bold"
+        android:paddingLeft="2dp"
+        android:layout_marginLeft="2dp"
+        />
+
+
+    <TextView
+        android:id="@+id/Record_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:textColor="#fff"
+        android:gravity="center_vertical|right"
+        android:typeface="normal"
+        android:layout_alignParentRight="true"
+        android:paddingRight="11dp"
+        android:textStyle="normal"/>
+
+</RelativeLayout>

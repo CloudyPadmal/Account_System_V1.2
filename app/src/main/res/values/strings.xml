@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Account System</string>
+
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="main_activity_hold">Hold</string>
+    <string name="main_activity_expense_label">Total Expense</string>
+    <string name="main_activity_income_label">Total Income</string>
+    <string name="update">Update</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="clear">Clear</string>
+    <string name="create">Create</string>
+    <string name="type">Type</string>
+    <string name="description">Description</string>
+    <string name="category">Category</string>
+    <string name="expense">Expense</string>
+    <string name="income">Income</string>
+    <string name="date">Date</string>
+    <string name="amount">Amount</string>
+    <string name="browse_categories">Browse Categories</string>
+    <string name="add_new_category">Add New Category</string>
+    <string name="back_key_pressed">Press Back again to close</string>
+    <string name="entry_successful">Entry Added Successfully</string>
+    <string name="update_successful">Entry Updated Successfully</string>
+    <string name="entry_failed">Something is not right</string>
+    <string name="entry_deleted">Record Deleted Successfully</string>
+    <string name="entry_delete_msg">You really want to delete this one?</string>
+    <string name="entry_delete_title">Delete Record</string>
+
+    <!-- Navigation Drawer Menu Items -->
+    <string-array name="array_nav_drawer_items">
+        <item >New Record</item>
+        <item >New Category</item>
+        <item >View Records</item>
+        <item >View Categories</item>
+        <item >Summary</item>
+    </string-array>
+
+    <!-- Navigation Drawer Menu Item Icons -->
+    <array name="array_nav_drawer_icons">
+        <item>@drawable/img_new_entry</item>
+        <item>@drawable/img_new_category</item>
+        <item>@drawable/img_records</item>
+        <item>@drawable/img_categories</item>
+        <item>@drawable/img_summary</item>
+    </array>
+
+    <string name="title_activity_activity__new_record">New Record</string>
+    <string name="title_activity_activity__new_category">New Category</string>
+    <string name="title_activity_activity__categories">Categories</string>
+    <string name="title_activity_activity__summary">Summary</string>
+    <string name="title_activity_activity__records__new">Records</string>
+
+</resources>

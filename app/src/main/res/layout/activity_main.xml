@@ -1,0 +1,83 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- RelativeLayout to display Items -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="67dp"
+            android:text="@string/main_activity_income_label"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/mainincomebutton"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/textView11"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/mainincomebutton"
+            android:text="@string/main_activity_expense_label"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/mainexpensebutton"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/textView12"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/mainholdbutton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainexpensebutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"
+            android:text="@string/main_activity_hold"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <!-- ListView to display slider menu -->
+    <ListView
+    android:id="@+id/list_drawermenu"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:layout_weight="0.7"
+    android:background="@drawable/bg_nav_list_normal"
+    android:choiceMode="singleChoice"
+    android:listSelector="@drawable/abc_list_selector_background_transition_holo_dark"/>
+
+
+</android.support.v4.widget.DrawerLayout>

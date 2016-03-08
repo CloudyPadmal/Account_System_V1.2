@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.padmal.accountsystemv12.Activity_NewRecord">
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_marginTop="15dp"
+            android:text="@string/date"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/newrecordentrydate"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/frameLayout4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="showDatePickerDialog"
+        android:textSize="18sp"
+        android:typeface="normal" />
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/frameLayout4"
+        android:layout_marginTop="64dp">
+
+        <Spinner
+            android:id="@+id/newrecordentrycategory"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_marginTop="15dp"
+            android:text="@string/category"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout5"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/frameLayout7">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_marginTop="15dp"
+            android:text="@string/amount"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/newrecordentryamount"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/newrecordentrybuttonupdate"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/create"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/newrecordentrybuttonclear"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="clearButtonClicked"
+        android:text="@string/clear"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout7"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/frameLayout3">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:text="@string/description"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/newrecordentrydescription"
+            android:layout_width="180dp"
+            android:layout_height="90dp"
+            android:layout_gravity="end|center_vertical"
+            android:alpha="1"
+            android:clickable="false"
+            android:enabled="false"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout6"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/frameLayout4">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_marginTop="15dp"
+            android:text="@string/type"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <ToggleButton
+            android:id="@+id/newrecordentrytype"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_gravity="end|center_vertical"
+            android:checked="false"
+            android:textOff="Expense"
+            android:textOn="Income"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+
+</RelativeLayout>

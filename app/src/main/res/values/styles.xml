@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.V7.Theme.AppCompat">
+
+        <item name="textAllCaps">false</item>
+        <item name="actionBarTabTextStyle">@style/Padmal.ActionBar.TabText</item>
+        <item name="actionBarTabStyle">@style/Padmal.ActionBar.TabView</item>
+
+    </style>
+
+    <style name="Padmal.ActionBar.TabText" parent="Base.Widget.AppCompat.ActionBar.TabText">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:maxWidth">180dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="Padmal.ActionBar.TabView" parent="Base.Widget.AppCompat.ActionBar.TabView">
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:minWidth">80dip</item>
+    </style>
+
+</resources>

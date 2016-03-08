@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.padmal.accountsystemv12.Activity_NewRecord">
+
+      <item
+          android:id="@+id/new_record_entry_new_cat"
+          android:title="@string/add_new_category"
+          android:icon="@android:drawable/ic_menu_day"
+          app:showAsAction= "ifRoom"/>
+
+      <item
+          android:id="@+id/new_record_entry_view_cat_summary"
+          android:title="@string/browse_categories"
+          android:icon="@android:drawable/ic_menu_agenda"
+          app:showAsAction="ifRoom"/>
+
+</menu>

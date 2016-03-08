@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.padmal.accountsystemv12" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/img_update"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name=".Activity_Main"
+            android:label="@string/app_name"
+            android:theme="@style/Base.V7.Theme.AppCompat" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activity_NewRecord"
+            android:label="@string/title_activity_activity__new_record" >
+        </activity>
+
+        <activity
+            android:name=".Activity_NewCategory"
+            android:label="@string/title_activity_activity__new_category" >
+        </activity>
+
+        <activity
+            android:name=".Activity_Categories"
+            android:label="@string/title_activity_activity__categories" >
+        </activity>
+
+        <activity
+            android:name=".Activity_Summary"
+            android:label="@string/title_activity_activity__summary" >
+        </activity>
+
+        <activity
+            android:name=".Activity_Records"
+            android:label="@string/title_activity_activity__records__new" >
+        </activity>
+
+    </application>
+
+</manifest>
